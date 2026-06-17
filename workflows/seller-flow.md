@@ -4,22 +4,21 @@ config:
   layout: fixed
 ---
 flowchart LR
- subgraph subGraph0["PAYOR FLOW"]
-        B["<b>QAP</b><br>ATTACHED TO: Form 1601-EQ"]
-        A["<b>FORM 2307</b><br>FILLED UP BY: PAYOR"]
-        C["<b>Annual QAP</b><br>ATTACHED TO: Form 1604-E"]
+ subgraph subGraph0["SELLER FLOW"]
+        A["<b>FORM 2307</b><br>RECEIVED FROM: PAYOR"]
+        B["<b>SAWT</b><br>ATTACHED TO: Forms 1701Q / 1702Q / 1701 / 1702"]
+        C["<b>FORM 2307</b><br>ATTACHED TO: eAFS System"]
         D["<b>BIR eSubmission</b><br>(esubmission@bir.gov.ph)"]
-        E["<b>BIR eSubmission or eFPS portal</b>"]
+        E["<b>Electronic Audited Financial Statements</b><br>(eAFS System)"]
   end
     A --> B
     B --> C
     B -- Submitted Via --> D
     C -- Submitted Via --> E
 
-    style B fill:#bde0fe,stroke:#333,stroke-width:1px
     style A fill:#bde0fe,stroke:#333,stroke-width:1px
+    style B fill:#bde0fe,stroke:#333,stroke-width:1px
     style C fill:#bde0fe,stroke:#333,stroke-width:1px
     style D fill:#bde0fe,stroke:#333,stroke-width:1px
     style E fill:#bde0fe,stroke:#333,stroke-width:1px
-
     ```
