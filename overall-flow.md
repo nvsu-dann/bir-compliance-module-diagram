@@ -1,5 +1,4 @@
 ```mermaid
-%%{init: {"sequence": {"messageAlign": "left", "noteAlign": "left"}}}%%
 sequenceDiagram
     autonumber
     actor Buyer as Buyer (Payor)
