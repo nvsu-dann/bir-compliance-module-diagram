@@ -4,12 +4,12 @@ config:
   layout: fixed
 ---
 flowchart LR
- subgraph subGraph0["SLSP (VAT Track)"]
-        A["<b>Sales &amp; Purchase Invoices</b>"]
-        B["<b>SLSP</b><br>ATTACHED TO: Form 2550Q"]
+ subgraph subGraph0["OTHER STREAMS (EMPLOYEES)"]
+        B["<b>Form 1601-C</b>"]
+        C["<b>Annual Alphalist of Employees</b><br>ATTACHED TO: Form 1604-C"]
   end
-    A --> B
+    B --> C
 
-    style A fill:#bde0fe,stroke:#333,stroke-width:1px
     style B fill:#bde0fe,stroke:#333,stroke-width:1px
+    style C fill:#bde0fe,stroke:#333,stroke-width:1px
 ```
