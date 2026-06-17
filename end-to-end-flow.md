@@ -1,4 +1,5 @@
 ```mermaid
+
 flowchart TD
     %% Styling Definitions
     classDef system fill:#d4e6f1,stroke:#2874a6,stroke-width:2px;
@@ -48,7 +49,6 @@ flowchart TD
         direction LR
         %% Payor Side
         Sub_Payor_QAP["Payor Submits QAP (.dat)<br>Attached to 1601-EQ/1604-E"]:::payor
-        Sub_Payor_Main["Payor Files Main Return<br>(Pays Grand Total)"]:::payor
         
         %% Payee Side
         Sub_Payee_SAWT["Payee Submits SAWT (.dat)<br>Attached to 1701Q/1702Q"]:::payee
